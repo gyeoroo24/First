@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fithletes </title>
+</head>
+<link rel = "stylesheet" href="css/style.css">
+<style>
+    /*CSS RESET*/
+    body{
+        color : white;
+        margin: 0px;
+        padding: 0px;
+        background : url('HTML_PROGS/Images/extra.jpg');
+
+    }
+    .left{
+        display:inline-block;
+       /* border: 2px solid rgb(245, 245, 239);*/
+        position:absolute;
+        left : 40px;
+        top : 20px;
+    }
+    .mid{
+        display: block;
+        width : 33%;
+        margin: 20px auto;
+        /*border: 2px solid rgb(247, 247, 248);*/
+    }
+    .right{
+        position:absolute;
+        display: inline-block;
+        /*border:2px solid whitesmoke;*/
+        right : 40px;
+        top : 20px;
+        color:maroon;
+    }
+    .navbar{
+        display : inline-block;
+    
+    }
+    .navbar li{
+        display:inline-block;
+        color:white;
+        font-size: 20px;
+}
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding : 30px 13px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color:rgb(245, 16, 123);
+    }
+    .left img{
+        width: 75px;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 9px;
+        color:black;
+        background-color: rgb(4, 203, 253);
+        padding: 4px 14px;
+        border:2px solid red;
+        border-radius: round;
+        font-size: 20px;
+        cursor:pointer;
+    }
+    .btn:hover{
+        background-color: coral;
+    }
+    .container{
+        border :2px solid whitesmoke;
+        margin:106px 80px;
+        padding : 75px;
+        width:33%;
+        border-radius:28px;
+        font-size: 13px;
+        color: rgb(246, 250, 252);
+        
+    }
+    .form-group input{
+        font-size: 25px;
+        margin: 11px auto;
+        text-align: center;
+        display: block;
+        width : 500px;
+        border : 2px solid black;
+        padding: 6px;
+        border-radius: 8px;
+
+    }
+    .container h1{
+        text-align:center;
+        font-size: 30px;
+    }
+    .container button{
+        display: block;
+        margin:20px auto;
+        width:20%;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src ="Images/logo.jpeg" alt=" ">
+            <br>
+            Fithletes
+        </div>
+        <!--mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home </a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Fitness Corner</a></li>
+                <li><a href="#"> Contact Us </a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+           <button class="btn">Call us Now!</button>
+           <button class="btn">Email Us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Begin your Fitness Journey with us Today!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your contact number">
+            </div>
+            <button class="btn"> Submit </button>
+        </form>
+    </div>
+</body>
+</html>
